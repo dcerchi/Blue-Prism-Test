@@ -1,0 +1,896 @@
+﻿<process name="Training" version="1.0" bpversion="6.2.1.4272" narrative="" byrefcollection="true" type="object" runmode="Exclusive" preferredid="ff02be8e-4f79-449d-9f03-46d60a6fa005">
+  <appdef>
+    <element name="Application Root">
+      <id>5252a459-e278-4de7-b2a3-11cab3c77e2c</id>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="57de3f33-9a8a-4806-b929-ceb980b943a8" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="33d386a8-30e3-4130-bc18-454fc3017a9e" type="Normal" published="True">
+    <name>Decision and Choice</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>-10</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="809cb40a-2f1c-4dfc-add2-0209ac483f46" type="Normal" published="True">
+    <name>Collection and Loop</name>
+    <view>
+      <camerax>65</camerax>
+      <cameray>12</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="2787884a-6052-4fc3-96b6-bac2ce9d5d5c" type="Normal" published="True">
+    <name>Error Handling</name>
+    <view>
+      <camerax>73</camerax>
+      <cameray>-72</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="5e4158c2-0cbd-4388-b72c-405e6819ef6d" name="Start" type="Start">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>c1d7fa68-5378-499a-9358-4d1fa339aa2b</onsuccess>
+  </stage>
+  <stage stageid="c140fa0e-8f96-42df-9b03-dd917e1bddc2" name="End" type="End">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="5e8f35db-d960-4716-b180-5f38b93d94f3" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>visualbasic</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="62d9d536-c225-4a16-8d4c-25ac884d0250" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>57de3f33-9a8a-4806-b929-ceb980b943a8</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="387c7a1c-9cad-4f78-973a-d9d04a8f4ec4" name="Start" type="Start">
+    <subsheetid>57de3f33-9a8a-4806-b929-ceb980b943a8</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>3164fa39-6a2c-40ef-8e42-37d91d9f41cb</onsuccess>
+  </stage>
+  <stage stageid="3164fa39-6a2c-40ef-8e42-37d91d9f41cb" name="End" type="End">
+    <subsheetid>57de3f33-9a8a-4806-b929-ceb980b943a8</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="e1f2e450-c57b-49d2-9175-284f1b326756" name="Decision and Choice" type="SubSheetInfo">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-375</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="af9b8be9-7b3b-4f68-8ed5-53d69534e6e1" name="Start" type="Start">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-210</displayx>
+    <displayy>-165</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>a33dadba-05f7-4b69-b14f-e0fbfdd6ce7a</onsuccess>
+  </stage>
+  <stage stageid="b276d7a2-f999-4412-b64f-04e56acf25e9" name="End" type="End">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-210</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="cc1a9a89-8b30-47b4-8216-a9ff52930be5" name="Note1" type="Note">
+    <subsheetid>57de3f33-9a8a-4806-b929-ceb980b943a8</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="e2e048dd-63dc-4d85-8330-66701715f89a" name="Note2" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <displayx>-180</displayx>
+    <displayy>60</displayy>
+    <displaywidth>180</displaywidth>
+    <displayheight>230</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="0e2e21e6-3314-465e-9e7d-bea43e18ee9a" name="Result &gt; 0?" type="Decision">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-210</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="([Result] &gt; 0)&#xA;AND&#xA;([Data3] = 4)" />
+    <ontrue>71e2ac6e-06cd-4286-a1a7-118b44984523</ontrue>
+    <onfalse>b0b251ce-5c67-4ef5-ba68-99b475950d53</onfalse>
+  </stage>
+  <stage stageid="74213ef4-ed59-449f-9f11-e9d1fe22f2f8" name="Data2" type="Data">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-360</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>2</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c99ec1f2-d10d-4333-a5b1-75e61088d7ab" name="Data1" type="Data">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-420</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>1</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="41f946ce-3f99-4d80-80f3-18746f5d911b" name="Data3" type="Data">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-420</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>3</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1cb566ed-0eaa-487f-99df-31a7317178fc" name="Data4" type="Data">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-360</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>4</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a33dadba-05f7-4b69-b14f-e0fbfdd6ce7a" name="Somar" type="Calculation">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-210</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>0e2e21e6-3314-465e-9e7d-bea43e18ee9a</onsuccess>
+    <calculation expression="[Data1]+[Data2]" stage="Result" />
+  </stage>
+  <stage stageid="5526e3b5-0d75-4182-96b2-f0ea58a755ce" name="Result" type="Data">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-420</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b0b251ce-5c67-4ef5-ba68-99b475950d53" name="Anchor1" type="Anchor">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-270</displayx>
+    <displayy>0</displayy>
+    <displaywidth>10</displaywidth>
+    <displayheight>10</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b276d7a2-f999-4412-b64f-04e56acf25e9</onsuccess>
+  </stage>
+  <stage stageid="71e2ac6e-06cd-4286-a1a7-118b44984523" name="Anchor1" type="Anchor">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-150</displayx>
+    <displayy>0</displayy>
+    <displaywidth>10</displaywidth>
+    <displayheight>10</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>b276d7a2-f999-4412-b64f-04e56acf25e9</onsuccess>
+  </stage>
+  <stage stageid="0211b068-17fe-4799-b0c7-e21cdb9ca6f8" name="Choice" type="ChoiceStart">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-45</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <groupid>dbacde34-b45c-41d4-9321-9ab7b8a79181</groupid>
+    <choices>
+      <choice expression="[Result]&gt;0">
+        <name>Maior que 0</name>
+        <distance>60</distance>
+        <ontrue>57010310-8519-46a8-833b-6333cc173a62</ontrue>
+      </choice>
+      <choice expression="[Result]=0">
+        <name>Igual a 0</name>
+        <distance>120</distance>
+        <ontrue>c0ad69a2-11d9-4084-8021-ef485b9f890a</ontrue>
+      </choice>
+      <choice expression="[Result]&lt;0">
+        <name>Menor que 0</name>
+        <distance>150</distance>
+        <ontrue>4cd21a44-50dd-452d-a1a3-a24da82bb2cd</ontrue>
+      </choice>
+    </choices>
+  </stage>
+  <stage stageid="8df806f3-0552-40df-af27-8ba95cdbd821" name="Otherwise" type="ChoiceEnd">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>-60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>5e562f61-9a16-4dca-809f-9b827f7357d7</onsuccess>
+    <groupid>dbacde34-b45c-41d4-9321-9ab7b8a79181</groupid>
+  </stage>
+  <stage stageid="57010310-8519-46a8-833b-6333cc173a62" name="Anchor2" type="Anchor">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>15</displayy>
+    <displaywidth>10</displaywidth>
+    <displayheight>10</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>37980937-459f-4cef-9760-a44799b8de5b</onsuccess>
+  </stage>
+  <stage stageid="c0ad69a2-11d9-4084-8021-ef485b9f890a" name="Anchor2" type="Anchor">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>75</displayx>
+    <displayy>15</displayy>
+    <displaywidth>10</displaywidth>
+    <displayheight>10</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>37980937-459f-4cef-9760-a44799b8de5b</onsuccess>
+  </stage>
+  <stage stageid="5e562f61-9a16-4dca-809f-9b827f7357d7" name="Anchor3" type="Anchor">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>150</displayx>
+    <displayy>15</displayy>
+    <displaywidth>10</displaywidth>
+    <displayheight>10</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>37980937-459f-4cef-9760-a44799b8de5b</onsuccess>
+  </stage>
+  <stage stageid="37980937-459f-4cef-9760-a44799b8de5b" name="End1" type="End">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>75</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="5b46db1d-96ee-4495-9025-dad2af84820d" name="Multi1" type="MultipleCalculation">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>300</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>bfb137e9-f170-4f18-a26a-79f95b2e677f</onsuccess>
+    <steps>
+      <calculation expression="[Data1]+[Data2]" stage="Result" />
+      <calculation expression="[Result]+[Data1]" stage="Result" />
+      <calculation expression="[Result]+[Data3]" stage="Result" />
+    </steps>
+  </stage>
+  <stage stageid="df4ae8b3-1d00-4347-9a1e-3001b3c78121" name="Collection and Loop" type="SubSheetInfo">
+    <subsheetid>809cb40a-2f1c-4dfc-add2-0209ac483f46</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-345</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="4201dba9-63e1-4dfd-89c2-c6e6ad3c14cf" name="Start" type="Start">
+    <subsheetid>809cb40a-2f1c-4dfc-add2-0209ac483f46</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>9546bf73-7f56-4e01-ba1e-75a871a2e560</onsuccess>
+  </stage>
+  <stage stageid="6cdf95cf-a3d0-4e65-a783-ddb2e6b6ddde" name="End" type="End">
+    <subsheetid>809cb40a-2f1c-4dfc-add2-0209ac483f46</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>180</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="2fde358b-d75e-4d48-a25a-b44d24acb4de" name="Error Handling" type="SubSheetInfo">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="a880d63b-46d2-45c9-a92d-815472a07466" name="Start" type="Start">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-240</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>694c2146-e6ec-4856-8cae-e27c7f6af13e</onsuccess>
+  </stage>
+  <stage stageid="4966d479-5c72-437b-80fb-fed90990a465" name="End" type="End">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="bfb137e9-f170-4f18-a26a-79f95b2e677f" name="End2" type="End">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>300</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="914cccd6-fa47-4824-aae4-5d5f167d004f" name="Collection" type="Collection">
+    <subsheetid>809cb40a-2f1c-4dfc-add2-0209ac483f46</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-150</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="Numero" type="number" namespace="" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="Numero" type="number" value="1" />
+      </row>
+      <row>
+        <field name="Numero" type="number" value="2" />
+      </row>
+      <row>
+        <field name="Numero" type="number" value="3" />
+      </row>
+      <row>
+        <field name="Numero" type="number" value="4" />
+      </row>
+      <row>
+        <field name="Numero" type="number" value="5" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="9546bf73-7f56-4e01-ba1e-75a871a2e560" name="Loop Start1" type="LoopStart">
+    <subsheetid>809cb40a-2f1c-4dfc-add2-0209ac483f46</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>069b5a8b-9731-4c2e-a5f4-73844d87ee82</onsuccess>
+    <groupid>6348a930-0c16-4358-9c6a-757d0631d910</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>Collection</loopdata>
+  </stage>
+  <stage stageid="32f591c8-0a04-49d4-8fbe-e875b09a84e6" name="Loop End1" type="LoopEnd">
+    <subsheetid>809cb40a-2f1c-4dfc-add2-0209ac483f46</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>44ba6401-d61a-4745-a85f-702246046835</onsuccess>
+    <groupid>6348a930-0c16-4358-9c6a-757d0631d910</groupid>
+  </stage>
+  <stage stageid="069b5a8b-9731-4c2e-a5f4-73844d87ee82" name="Decision1" type="Decision">
+    <subsheetid>809cb40a-2f1c-4dfc-add2-0209ac483f46</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Collection.Numero]=4" />
+    <ontrue>c3e7742c-8fd6-44c7-8b9f-9339a45fc1d0</ontrue>
+    <onfalse>32f591c8-0a04-49d4-8fbe-e875b09a84e6</onfalse>
+  </stage>
+  <stage stageid="c3e7742c-8fd6-44c7-8b9f-9339a45fc1d0" name="Anchor4" type="Anchor">
+    <subsheetid>809cb40a-2f1c-4dfc-add2-0209ac483f46</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>0</displayy>
+    <displaywidth>10</displaywidth>
+    <displayheight>10</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>6cdf95cf-a3d0-4e65-a783-ddb2e6b6ddde</onsuccess>
+  </stage>
+  <stage stageid="44ba6401-d61a-4745-a85f-702246046835" name="End3" type="End">
+    <subsheetid>809cb40a-2f1c-4dfc-add2-0209ac483f46</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="0fa66efb-2041-43d7-bdac-69f50a4cf280" name="Data2" type="Data">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-180</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>2</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1b95e8f9-b4e3-4359-a5a7-1f40b272c937" name="Data1" type="Data">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-240</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>1</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="00b24b52-9f6b-4f24-918f-77e7fcb7edf0" name="Data3" type="Data">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-240</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>3</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ac1baf74-45ad-4795-b4ae-48e949d79c75" name="Data4" type="Data">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-180</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>4</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="bbe38374-bc9a-468c-947c-c7814c168e3c" name="Result" type="Data">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-240</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="694c2146-e6ec-4856-8cae-e27c7f6af13e" name="Operação" type="Calculation">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>5fb6aa5c-253e-4cdc-944f-57fa6bd8982b</onsuccess>
+    <calculation expression="([Data1]-[Data2])/0" stage="Result" />
+  </stage>
+  <stage stageid="708bc1c9-9d1f-40b8-8fc2-dbb75a0f2bb1" name="Maior que 0?" type="Decision">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <decision expression="[Result]&gt;0" />
+    <ontrue>4966d479-5c72-437b-80fb-fed90990a465</ontrue>
+    <onfalse>6a9e7414-6430-4251-af6e-b5e4766f62de</onfalse>
+  </stage>
+  <stage stageid="6a9e7414-6430-4251-af6e-b5e4766f62de" name="Anchor5" type="Anchor">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>30</displayy>
+    <displaywidth>10</displaywidth>
+    <displayheight>10</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>ddf4f058-3b1d-46f7-be72-9c07a6ba070d</onsuccess>
+  </stage>
+  <stage stageid="5f09e0fa-6696-4504-af64-c1dae39a8c73" name="Note" type="Note">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>Calculation</narrative>
+    <displayx>-240</displayx>
+    <displayy>-120</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="3b70cc57-690f-4ed7-b522-5b800c16777f" name="Note" type="Note">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>Choice</narrative>
+    <displayx>-75</displayx>
+    <displayy>-90</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="3598b2ef-492c-4967-a83e-69b532ed291c" name="Note3" type="Note">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>Multi Calculation</narrative>
+    <displayx>255</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="65aa3c93-bda7-4b28-9a31-ec0b177bce10" name="Note" type="Note">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>Decision</narrative>
+    <displayx>-240</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>30</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="c1d7fa68-5378-499a-9358-4d1fa339aa2b" name="Decision and Choice" type="SubSheet">
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>c140fa0e-8f96-42df-9b03-dd917e1bddc2</onsuccess>
+    <processid>33d386a8-30e3-4130-bc18-454fc3017a9e</processid>
+  </stage>
+  <stage stageid="4cd21a44-50dd-452d-a1a3-a24da82bb2cd" name="Anchor6" type="Anchor">
+    <subsheetid>33d386a8-30e3-4130-bc18-454fc3017a9e</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>15</displayy>
+    <displaywidth>10</displaywidth>
+    <displayheight>10</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>37980937-459f-4cef-9760-a44799b8de5b</onsuccess>
+  </stage>
+  <stage stageid="f3ba156a-4979-4f73-87ab-0d3aaafdc988" name="Resume1" type="Resume">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>f4117c46-8db0-44d3-a37b-7064237198e5</onsuccess>
+  </stage>
+  <stage stageid="5fb6aa5c-253e-4cdc-944f-57fa6bd8982b" name="Action2" type="Action">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>2ddc06f1-edf2-435d-bc7a-7de7f24b27d6</onsuccess>
+    <resource object="" action="" />
+  </stage>
+  <stage stageid="922b5a7c-e8b2-4abe-a5d7-9f27fae47bf0" name="Action4" type="Action">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>708bc1c9-9d1f-40b8-8fc2-dbb75a0f2bb1</onsuccess>
+    <resource object="" action="" />
+  </stage>
+  <stage stageid="5b740103-97fe-4f6a-afe9-11ca3eb1e11e" name="Block" type="Block">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>-90</displayx>
+    <displayy>-165</displayy>
+    <displaywidth>300</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="f4117c46-8db0-44d3-a37b-7064237198e5" name="Exception1" type="Exception">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <exception type="Business Exception" detail="&quot;Erro&quot;" />
+  </stage>
+  <stage stageid="cc8febb9-c2f2-4b1e-9611-9c5b221c8e9d" name="Recover1" type="Recover">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>867cb40c-dff8-476a-a546-98e57fb2c5e1</onsuccess>
+  </stage>
+  <stage stageid="867cb40c-dff8-476a-a546-98e57fb2c5e1" name="Calc Exception" type="Calculation">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>f3ba156a-4979-4f73-87ab-0d3aaafdc988</onsuccess>
+    <calculation expression="ExceptionType()&amp;&quot; &quot;&amp;ExceptionDetail()" stage="Exception" />
+  </stage>
+  <stage stageid="ddf4f058-3b1d-46f7-be72-9c07a6ba070d" name="End4" type="End">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>105</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="2ddc06f1-edf2-435d-bc7a-7de7f24b27d6" name="Action3" type="Action">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <loginhibit />
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>922b5a7c-e8b2-4abe-a5d7-9f27fae47bf0</onsuccess>
+    <resource object="" action="" />
+  </stage>
+  <stage stageid="6b7545b0-a009-44ea-97d3-03dce0cc8a18" name="Exception" type="Data">
+    <subsheetid>2787884a-6052-4fc3-96b6-bac2ce9d5d5c</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>
